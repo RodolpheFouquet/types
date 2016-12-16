@@ -1,5 +1,7 @@
 package types
 
+import "gopkg.in/mgo.v2/bson"
+
 type Encoder struct {
   Id  bson.ObjectId `json:"id" bson:"_id,omitempty"`
   Hostname string `json:"hostname"`
