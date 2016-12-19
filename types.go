@@ -37,14 +37,14 @@ type InputObj struct {
 type Pid struct {
   Type string `json:"type"`
   Processes []Process `json:"processes"`
+  Lang string `json:"lang,omitempty"`
+  Name string `json:"name,omitempty"`
 }
 
 type Process struct {
   Pages []Page `json:"pages,omitempty"`
   Encodings []Encoding `json:"encodings"`
   Outputs []Output `json:"outputs"`
-  Lang string `json:"lang,omitempty"`
-  Name string `json:"name,omitempty"`
 }
 
 type Page struct {
