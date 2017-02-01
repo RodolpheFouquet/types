@@ -36,6 +36,7 @@ type InputObj struct {
 
 type Pid struct {
   Type string `json:"type"`
+  Deinterlace string `json:"deinterlace,omitempty"`
   Processes []Process `json:"processes"`
   Lang string `json:"lang,omitempty"`
   Name string `json:"name,omitempty"`
@@ -58,7 +59,6 @@ type Encoding struct {
   Bitrate int64 `json:"bitrate,omitempty"`
   Samplerate int64 `json:"sample_rate,omitempty"`
   NumberOfChannels int64 `json:"num_channels,omitempty"`
-  Deinterlace string `json:"deinterlace,omitempty"`
   Type string `json:"type", omitempty`
 }
 
