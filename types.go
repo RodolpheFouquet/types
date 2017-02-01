@@ -59,7 +59,7 @@ type Encoding struct {
   Bitrate int64 `json:"bitrate,omitempty"`
   Samplerate int64 `json:"sample_rate,omitempty"`
   NumberOfChannels int64 `json:"num_channels,omitempty"`
-  Type string `json:"type", omitempty`
+  Type string `json:"type,omitempty"`
 }
 
 type Output struct {
