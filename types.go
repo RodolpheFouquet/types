@@ -77,3 +77,11 @@ type Output struct {
   Type string `json:"type"`
   Path string `json:"path"`
 }
+
+type Error struct {
+  Err string `json:"err"`
+}
+
+func NewError(message string) Error {
+  return Error{message}
+}
